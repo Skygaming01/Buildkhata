@@ -1,0 +1,70 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 11% 7%;
+    --foreground: 45 10% 98%;
+    --card: 30 11% 10%;
+    --card-foreground: 45 10% 98%;
+    --popover: 30 11% 7%;
+    --popover-foreground: 45 10% 98%;
+    --primary: 45 66% 60%;
+    --primary-foreground: 30 11% 7%;
+    --secondary: 30 11% 15%;
+    --secondary-foreground: 45 66% 60%;
+    --muted: 30 11% 15%;
+    --muted-foreground: 45 5% 65%;
+    --accent: 14 50% 50%;
+    --accent-foreground: 45 10% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 11% 18%;
+    --input: 30 11% 18%;
+    --ring: 45 66% 60%;
+    --radius: 1.25rem;
+    --chart-1: 45 66% 60%;
+    --chart-2: 14 50% 50%;
+    --chart-3: 160 60% 45%;
+    --chart-4: 200 70% 50%;
+    --chart-5: 280 65% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased selection:bg-primary/30;
+    background-image: radial-gradient(circle at 50% 0%, rgba(218, 185, 88, 0.05) 0%, transparent 50%),
+                      radial-gradient(circle at 0% 50%, rgba(191, 94, 64, 0.03) 0%, transparent 40%);
+    background-attachment: fixed;
+  }
+}
+
+.glass {
+  @apply bg-card/60 backdrop-blur-xl border border-white/5;
+}
+
+.glass-dark {
+  @apply bg-black/40 backdrop-blur-2xl border border-white/5;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-[#DAB958] to-[#BF5E40];
+}
+
+.amber-glow {
+  box-shadow: 0 0 20px -5px rgba(218, 185, 88, 0.3);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

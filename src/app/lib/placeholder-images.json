@@ -1,0 +1,35 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "Modern glass skyscraper architect design",
+      "imageUrl": "https://picsum.photos/seed/build1/600/400",
+      "imageHint": "modern architecture"
+    },
+    {
+      "id": "project-2",
+      "description": "Luxury interior design living room",
+      "imageUrl": "https://picsum.photos/seed/build2/600/400",
+      "imageHint": "interior design"
+    },
+    {
+      "id": "project-3",
+      "description": "Construction site aerial view",
+      "imageUrl": "https://picsum.photos/seed/build3/600/400",
+      "imageHint": "construction site"
+    },
+    {
+      "id": "client-1",
+      "description": "Professional male executive",
+      "imageUrl": "https://picsum.photos/seed/client1/100/100",
+      "imageHint": "executive portrait"
+    },
+    {
+      "id": "client-2",
+      "description": "Professional female executive",
+      "imageUrl": "https://picsum.photos/seed/client2/100/100",
+      "imageHint": "businesswoman portrait"
+    }
+  ]
+}
